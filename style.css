@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1b1f22;
+    color: #fff;
+}
+
+.navbar{
+   display: flex;
+   background-color: #1b1f22;
+   height: 60px;
+   text-align: left;
+   align-items: flex-start;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.logo{
+    color: #fff;
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-right: 20px;
+    text-decoration: inherit;
+    align-items: center;
+    padding: 14px 555px 0 40px;
+}
+
+.page-content{
+    padding: 40px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img{
+    height: 450px;
+}
+
+#prince{
+    color: #16F;
+    font-size: 40px;
+}
+
+.bold{
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.para{
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.text{
+    margin-top: 22px;
+}
+
+.icon{
+    font-size: 40px;
+}
+
+.contact-btn{
+    border: 2px solid #16F;
+    border-radius: 27px;
+    background-color: transparent;
+    color: #fff;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.font{
+    margin-left: 10px;
+    font-size: large;
+}
+
+.contact-btn:hover{
+    background-color: #16F;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.resume-btn{
+    border: 2px solid #16F;
+    border-radius: 27px;
+    background-color: #16F;
+    color: #fff;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.Font{
+    margin-left: 10px;
+    font-size: large;
+}
+
+.resume-btn:hover{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.para2{
+    font-size: 21px;
+}
+
+#about{
+    background-color: #1b1f22;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+   
+}
