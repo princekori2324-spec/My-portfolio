@@ -35,9 +35,30 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bolder;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
 }
 
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #16F;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #16F;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
 
 .logo{
     color: #fff;
@@ -61,8 +82,19 @@ nav ul li a{
     padding: 20px;
 }
 
-img{
+.image-container{
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image{
     height: 450px;
+    border-radius: 32px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover{
+    transform: scale(1.03);
 }
 
 #prince{
@@ -86,7 +118,7 @@ img{
     margin-top: 22px;
 }
 
-.icon{
+.icon-size{
     font-size: 40px;
 }
 
@@ -131,18 +163,163 @@ img{
 .resume-btn:hover{
     color: #fff;
     transition: 0.3s ease-in-out;
+    border-color: rgb(22, 70, 158);
+    background-color: rgb(22, 70, 158);
     cursor: pointer;
 }
 
-.para2{
-    font-size: 21px;
+.photo{
+    height: 450px;
+    border-radius: 32px;
+    margin-top: 70px;
 }
 
 #about{
-    background-color: #1b1f22;
-    color: #fff;
-    padding: 40px;
     display: flex;
     align-items: center;
-   
+    padding: 50px;
+}
+
+.row{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+hr{
+    border: 0.1px solid #16F;
+    margin: 20px 0;
+}
+
+.about-heading{
+    text-align: center;
+    color: #16F;
+    margin-top: 24px;
+}
+
+.about-para{
+    margin-top: 24px;
+    font-family: cursive;
+    padding-left: 56px;
+    font-size: 26px;
+}
+
+.color{
+    color:#EC4899;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #16F, );
+  margin: 0;
+  padding: 0;
+}
+
+.experience {
+  padding: 50px;
+  text-align: center;
+}
+
+.experience h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #232a34;
+  padding: 25px;
+  border-radius: 15px;
+  color: #e2e8f0;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #2d3748;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.company {
+  color: #555;
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 13px;
+  color: gray;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin-top: 15px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.card-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background: #3730a3;
+}
+
+.list{
+    padding-left: 18px;
+    margin-top: 15px;
+}
+
+.skills{
+    display: flex;
+    gap: 227px;
+}
+
+.about-heading{
+    margin: 65px 0px 20px 0px;
+
+}
+
+.skills .list ul{
+    list-style: none;
+}
+
+.heading{
+    padding-bottom: 29px;
+    color: #f1f5f9;
+}
+
+.skills .list ul li{
+    margin-bottom: 8px;
+    font-size: 19px;
+    color: #e2e8f0;
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: #16F;
+}
+
+.dg{
+    color: #16F;
+    margin-bottom: 12px;
 }
